@@ -23,7 +23,7 @@ def choices_to_emoji(choice):
 possibilities_to_choose = ["rock", "paper", "scissor"]
 
 choice_by_pc = ""
-player_choice = str("")
+player_choice = ""
 
 while player_choice != "end":
     
