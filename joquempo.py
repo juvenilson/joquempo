@@ -4,13 +4,13 @@ import emoji
 
 
 def show_who_win(choice_by_pc):
-    print(f"You win!!! i chose {emoji_pc(choice_by_pc)}, and you {emoji_player(player_choice)}.")
+    print(f"You win!!! i chose {choices_to_emoji(choice_by_pc)}, and you {choices_to_emoji(player_choice)}.")
 
 def show_who_lose(choice_by_pc):
-    print(f"You lose!! i chose {emoji_pc(choice_by_pc)}, and you {emoji_player(player_choice)}.")
+    print(f"You lose!! i chose {choices_to_emoji(choice_by_pc)}, and you {choices_to_emoji(player_choice)}.")
 
-def emoji_pc(choice_by_pc):
-    match(choice_by_pc):
+def choices_to_emoji(choice):
+    match(choice):
         case "rock":
             return emoji.emojize(":right-facing_fist:")
         case "paper":
@@ -18,13 +18,7 @@ def emoji_pc(choice_by_pc):
         case "scissor":
             return emoji.emojize( ":vulcan_salute:")
 
-def emoji_player(player_choice):
-    if player_choice == "rock":
-        return(emoji.emojize(":right-facing_fist:"))
-    elif player_choice == "paper":
-        return(emoji.emojize(":hand_with_fingers_splayed:"))
-    elif player_choice == "scissor":
-        return(emoji.emojize(":vulcan_salute:"))
+
 
 possibilities_to_choose = ["rock", "paper", "scissor"]
 
@@ -54,4 +48,4 @@ while player_choice != "end":
         case["scissor", "rock"]:
             show_who_win(choice_by_pc)
         case[_, _]:
-            print(f"We have a draw!!! I chose {emoji_pc(choice_by_pc)}, and you too!")
+            print(f"We have a draw!!! I chose {choices_to_emoji(choice_by_pc)}, and you too!")
