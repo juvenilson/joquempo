@@ -1,12 +1,15 @@
 <html>
 <head>
 </head>
-<body style= "background-color:ligthblue">
+<body style=backgroundcolor:#000000>
 
-# joquempo
->> Gaming with machine.<br>
-  >> This is a simple game to practice my python coding.</br>
->> Try to play with you want.<br>
-
+> # joquempo
+       
+>  📥 This is a simple game to practice my python coding.</br>
+    
+>  🎮 Try to play with you want.<br>
+      
+>  🎲 Gaming with machine. <br>
+  
 </body>
 </html>
